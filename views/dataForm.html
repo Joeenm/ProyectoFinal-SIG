@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis datos - MentorHub</title>
+  <link rel="stylesheet" href="/asssets/css/styleData.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="student-info">
+      <h2>Información del Estudiante</h2>
+      <form id="studentForm">
+        <label for="firstName">Primer Nombre:</label>
+        <input type="text" id="firstName" name="firstName">
+
+        <label for="secondName">Segundo Nombre:</label>
+        <input type="text" id="secondName" name="secondName">
+
+        <label for="lastName1">Primer Apellido:</label>
+        <input type="text" id="lastName1" name="lastName1">
+
+        <label for="lastName2">Segundo Apellido:</label>
+        <input type="text" id="lastName2" name="lastName2">
+
+        <label for="birthDate">Fecha de Nacimiento:</label>
+        <input type="date" id="birthDate" name="birthDate">
+
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="gender">Género:</label>
+        <select id="gender" name="gender">
+          <option value="male">Masculino</option>
+          <option value="female">Femenino</option>
+          <option value="other">Otro</option>
+        </select>
+
+        <label for="address">Dirección:</label>
+        <textarea id="address" name="address" rows="3"></textarea>
+      </form>
+    </div>
+
+    <div class="orientation-info">
+      <h2>Preguntas sobre la Orientación</h2>
+      <form id="orientationForm">
+        <label for="studyArea">Área de Estudio de Interés:</label>
+        <input type="text" id="studyArea" name="studyArea">
+
+        <label for="university">Universidad de Interés:</label>
+        <input type="text" id="university" name="university">
+
+        <label for="programType">Tipo de Programa:</label>
+        <select id="programType" name="programType">
+          <option value="ingenieria">Ingeniería</option>
+          <option value="licenciatura">Licenciatura</option>
+          <option value="tecnico">Técnico</option>
+        </select>
+
+        <label for="career">Carrera Universitaria de Interés:</label>
+        <input type="text" id="career" name="career">
+
+        <label for="gpa">Índice Académico:</label>
+        <input type="number" id="gpa" name="gpa" step="0.01">
+
+        <label for="skills">Habilidades:</label>
+        <textarea id="skills" name="skills" rows="3"></textarea>
+      </form>
+    </div>
+  </div>
+
+  <script src=""></script>
+</body>
+
+</html>
