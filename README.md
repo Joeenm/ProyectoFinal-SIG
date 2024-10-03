@@ -1,4 +1,5 @@
 MentorHub
+
 MentorHub is an innovative platform designed to provide guidance and support to students and professionals in their academic and career development. The platform offers personalized recommendations based on individual skills, interests, and goals.
 
 Features
@@ -8,9 +9,3 @@ Detailed Reports: Gain insights into educational requirements, job prospects, an
 Our mission is to empower users to make informed decisions about their futures, guiding them step by step towards success.
 
 Slogan: "Guiding your future, one step at a time."
-
-Getting Started
-To get started with MentorHub, clone this repository and follow the setup instructions.
-
-Contributing
-Contributions are welcome! Please feel free to submit issues or pull requests.
