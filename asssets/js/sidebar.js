@@ -6,20 +6,26 @@ expand_btn.addEventListener("click", () => {
   document.body.classList.toggle("collapsed");
 });
 
-const current = window.location.href;
+// Función para cargar el contenido del home
+function loadHomeContent() {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', 'home.html', true);
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      document.getElementById('main-content').innerHTML = xhr.responseText;
+    }
+  };
+  xhr.send();
+}
 
-const allLinks = document.querySelectorAll(".sidebar-links a");
-
-allLinks.forEach((elem) => {
-  elem.addEventListener("click", function () {
-    const hrefLinkClick = elem.href;
-
-    allLinks.forEach((link) => {
-      if (link.href == hrefLinkClick) {
-        link.classList.add("active");
-      } else {
-        link.classList.remove("active");
-      }
+// Agregar el evento de clic al cargar la página
+window.onload = function() {
+  loadHomeContent(); // Cargar contenido inicial
+  const homeLink = document.querySelector('a[href="#home"]');
+  if (homeLink) {
+    homeLink.addEventListener('click', function(e) {
+      e.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+      loadHomeContent(); // Cargar contenido de home
     });
-  });
-});
+  }
+};
