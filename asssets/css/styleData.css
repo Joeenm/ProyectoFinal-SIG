@@ -17,9 +17,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
-    padding: 20px;
     border-radius: 1rem;
     background-color: #FCFCFD;
     color: #424662;

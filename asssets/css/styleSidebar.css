@@ -25,8 +25,8 @@ body {
   font-family: 'Work Sans', sans-serif;
   background: var(--full-bg);
   font-size: 16px;
-  padding: 1rem;
-  height: 100%;
+  padding: 2rem;
+  height: 100vh;
 }
 
 html {
@@ -40,87 +40,36 @@ html {
 }
 
 .sidebar {
-  position: sticky;
+  position: fixed; /* Cambia a fixed para mantenerla completamente fija en la pantalla */
   top: 0;
   left: 0;
-  min-height: 53.75rem;
-  height: 100%;
+  width: 18rem; /* Define un ancho fijo */
+  height: 100vh; /* Asegura que ocupe todo el alto de la pantalla */
   padding: 1rem 0;
-  border-radius: 1rem;
-  max-width: 18rem;
-  display: flex;
+  background: var(--sidebar-background);
   color: var(--white);
+  display: flex;
   flex-direction: column;
-  background: var(
-    --sidebar-background
-  );
-  transition: max-width 0.1s 
-    ease-in-out;
+  z-index: 1000; /* Asegura que esté siempre por encima del contenido principal */
+  transition: width 0.3s ease-in-out;
 }
 
 body.collapsed .sidebar {
-  max-width: 5rem;
-  display: flex;
-  align-items: center;
+  width: 5rem; /* Cambia el ancho al colapsar */
 }
 
+/* Estilo para atenuar el contenido */
+.content.attenuate {
+  opacity: 0.3; /* Cambia el valor según sea necesario */
+  transition: opacity 0.3s ease; /* Añadir una transición suave */
+}
+
+/* Ajustes adicionales para cuando está colapsada */
 body.collapsed .hide {
-  position: absolute;
   display: none;
 }
 
-/*? search wrapper */
-.search__wrapper {
-  padding: 0 1rem;
-  position: relative;
-}
-
-.search__wrapper input {
-  background: var(--background);
-  height: 2.5rem;
-  width: 100%;
-  border-radius: 0.5rem;
-  padding: 0 0.5rem;
-  padding-left: 2rem;
-  flex-grow: 1;
-  outline: none;
-  border: none;
-}
-
-.search__wrapper svg {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 1.625rem;
-  transform: translateY(-50%);
-  pointer-events: none;
-  right: 1.5rem;
-}
-
-body.collapsed .search__wrapper svg {
-  top: 50%;
-  left: 50%;
-  right: auto;
-  transform: translate(-50%, -50%);
-  color: var(--text-link);
-  stroke: var(--text-link);
-}
-
-.search__wrapper input::-webkit-input-placeholder {
-  color: var(--text-link);
-  white-space: nowrap;
-}
-
-body.collapsed .search__wrapper input {
-  max-width: 2.5rem;
-}
-
-body.collapsed .search__wrapper input::-webkit-input-placeholder {
-  color: transparent;
-}
-
 /*? sidebar top */
-
 .sidebar-top-wrapper {
   display: flex;
 }
@@ -177,7 +126,7 @@ body.collapsed .sidebar-top {
   animation: fadeIn 0.2s ease-in-out;
 }
 
-body.collapsed h2 {
+body.collapsed .sidebar-title {
   display: none;
 }
 
@@ -400,4 +349,11 @@ body.collapsed .expand-btn svg {
     opacity: 1;
     width: 100%;
   }
+}
+
+#main-content {
+  width: 100%;
+  display: flex; /* Habilita flexbox */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  padding: 3rem; /* Añade un poco de espacio alrededor */
 }

@@ -1,5 +1,3 @@
-
-
 :root {
     --primary: #4978F0;
     --primary-light: #E1EEF5;
@@ -78,7 +76,7 @@ body {
 
 
 .login-side {
-    padding: 7.75rem 2rem 3rem 2rem;
+    padding: 10.75rem 2rem 3rem 2rem;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -86,7 +84,7 @@ body {
 
 .info-side {
     height: 100vh;
-    padding: 5.25rem 3rem 3rem 2rem;
+    padding: 10.25rem 3rem 3rem 2rem;
     color: #401B3D;
     width: 100%;
     display: flex;
