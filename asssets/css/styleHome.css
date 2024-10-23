@@ -1,3 +1,9 @@
+body {
+  font-family: 'Manrope', sans-serif;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .home-container {
   max-width: auto; /* Establece un ancho máximo adecuado */
   margin: auto;
