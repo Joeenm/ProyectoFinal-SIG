@@ -62,6 +62,32 @@ document.getElementById('load-dataform').addEventListener('click', function(even
       .catch(error => console.error('Error al cargar dataForm:', error));
 });
 
+// Evento para el enlace de Recommendations
+document.getElementById('load-recommendations').addEventListener('click', function(event) {
+  event.preventDefault(); // Evitar que el enlace recargue la página
+
+  // Cargar el contenido de recommendations.html en el div con id "main-content"
+  fetch('recommendations.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('main-content').innerHTML = data;
+    })
+    .catch(error => console.error('Error al cargar recommendations:', error));
+});
+
+// Evento para el enlace de Reports
+document.getElementById('load-reports').addEventListener('click', function(event) {
+  event.preventDefault(); // Evitar que el enlace recargue la página
+
+  // Cargar el contenido de reports.html en el div con id "main-content"
+  fetch('reports.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('main-content').innerHTML = data;
+    })
+    .catch(error => console.error('Error al cargar reports:', error));
+});
+
 // Evento para el enlace de load-mentors
 document.getElementById('load-mentors').addEventListener('click', function(event) {
   event.preventDefault(); // Evitar que el enlace recargue la página
@@ -74,4 +100,5 @@ document.getElementById('load-mentors').addEventListener('click', function(event
       })
       .catch(error => console.error('Error al cargar mentors:', error));
 });
+
 
