@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recomendaciones - MentorHub</title>
+  <link rel="stylesheet" href="/asssets/css/styleRecommendation.css">
+</head>
+  <body>
+
+<!-- Tarjeta de no recomendaciones -->
+<div id="no-recommendations" class="card no-recommendations-card">
+  <div class="card-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M12 16v2M12 8v4"></path>
+      </svg>
+  </div>
+  <h3 class="card-title">Sin Recomendaciones Disponibles</h3>
+  <p>Para recibir recomendaciones personalizadas, por favor completa tu información en la sección de <strong>Mis Datos</strong>.</p>
+  <p>Asegúrate de incluir tus intereses y habilidades para que podamos ofrecerte las mejores opciones.</p>
+</div>
+
+<!-- Tarjeta de Recomendaciones -->
+  <div id="recommendations-container" class="recommendations-container" style="display: none;">
+    <section id="student-recommendations" class="recommendations-section">
+      <div class="recommendations-container">
+    
+        <!-- Primera Recomendación -->
+        <div class="card">
+          <h2 class="card-title">Recomendación 1</h2>
+          <div class="card-section student-info">
+            <h3 class="section-subtitle">Tu Información</h3>
+            <p><strong>Nombre:</strong> Juan Pérez</p>
+            <p><strong>Área de Estudio de Interés:</strong> Ingeniería de Software</p>
+            <p><strong>Carrera Universitaria de Interés:</strong> Ingeniería en Computación</p>
+            <p><strong>Índice Académico:</strong> 3.75</p>
+            <p><strong>Habilidades:</strong> Programación, Resolución de problemas, Trabajo en equipo</p>
+          </div>
+    
+          <div class="card-section recommendations-content">
+            <h3 class="section-subtitle">Universidades Recomendadas</h3>
+            <ul class="university-list">
+              <li id="university-item">Universidad de Stanford - Ingeniería en Computación</li>
+              <li id="university-item">MIT - Ciencias de la Computación</li>
+              <li id="university-item">Universidad Politécnica de Madrid - Ingeniería en Sistemas</li>
+            </ul>
+          </div>
+    
+          <div class="card-section recommendations-content">
+            <h3 class="section-subtitle">Oportunidades de Trabajo Recomendadas</h3>
+            <ul class="job-list">
+              <li id="job-item">Prácticas en Google - Desarrollador Junior</li>
+              <li id="job-item">Prácticas en Microsoft - Ingeniero de Software</li>
+              <li id="job-item">Pasante en Intel - Desarrollo de Software Embebido</li>
+            </ul>
+          </div>
+    
+          <div class="card-section mentor-comment">
+            <h3 class="section-subtitle">Comentario del Mentor</h3>
+            <p>"Juan, tienes un gran potencial en el área de desarrollo de software. Sigue así."</p>
+            <p><strong>- María Rodríguez, Mentor</strong></p>
+          </div>
+        </div>
+    
+        <!-- Segunda Recomendación -->
+        <div class="card">
+          <h2 class="card-title">Recomendación 2</h2>
+          <div class="card-section student-info">
+            <h3 class="section-subtitle">Tu Información</h3>
+            <p><strong>Nombre:</strong> Juan Pérez</p>
+            <p><strong>Área de Estudio de Interés:</strong> Inteligencia Artificial</p>
+            <p><strong>Carrera Universitaria de Interés:</strong> Ciencias de Datos</p>
+            <p><strong>Índice Académico:</strong> 3.75</p>
+            <p><strong>Habilidades:</strong> Análisis de datos, Estadística, Programación en Python</p>
+          </div>
+    
+          <div class="card-section recommendations-content">
+            <h3 class="section-subtitle">Universidades Recomendadas</h3>
+            <ul class="university-list">
+              <li id="university-item">Carnegie Mellon University - Ciencias de Datos</li>
+              <li id="university-item">Harvard University - Análisis de Datos</li>
+              <li id="university-item">Universidad de Cambridge - Ciencias de Datos</li>
+            </ul>
+          </div>
+    
+          <div class="card-section recommendations-content">
+            <h3 class="section-subtitle">Oportunidades de Trabajo Recomendadas</h3>
+            <ul class="job-list">
+              <li id="job-item">Analista de Datos en Facebook</li>
+              <li id="job-item">Científico de Datos en Amazon</li>
+              <li id="job-item">Pasante en Nvidia - Investigación en AI</li>
+            </ul>
+          </div>
+    
+          <div class="card-section mentor-comment">
+            <h3 class="section-subtitle">Comentario del Mentor</h3>
+            <p>"Tus habilidades en análisis de datos y tu índice académico te hacen un excelente candidato para la investigación en inteligencia artificial."</p>
+            <p><strong>- Carlos Méndez, Mentor</strong></p>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+  </div>
+
+    <script src="/asssets/js/recommendations.js"></script>
+  </body>
+
+</html>
