@@ -20,7 +20,7 @@
                 <a href="#" title="Logo">
                     <img class="logo" src="/asssets/images/logo.png" alt="Logo">
                 </a>
-                <form class="my-form">
+                <form method="POST" action="php/registro_usuario.php" class="my-form">
                     <div class="login-welcome-row">
                         <h1>Crea tu Cuenta &#x1F44F;</h1>
                     </div>
@@ -95,7 +95,7 @@
                             </a>
                         </div>
                         <div class="my-form__signup">
-                            <a href="/views/login.html" title="Acceder">
+                            <a href="index.php" title="Acceder">
                                 Acceder
                             </a>
                         </div>

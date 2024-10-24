@@ -1,3 +1,8 @@
+<?php
+session_start();
+$user = $_SESSION['user']; // Obtener los datos del usuario de la sesión
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -164,10 +169,10 @@
         <div class="online__status"></div>
       </div>
       <section class="avatar__name hide">
-        <div class="user-name">Joeenm</div>
-        <div class="email">joeenm@utp.ac.pa</div>
+        <div class="user-name"><?php echo $user['email']; ?></div>
+        <div class="email"><?php echo $user['email']; ?></div>
       </section>
-      <a href="#logout" class="logout">
+      <a href="/php/logout.php" class="logout">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="24" height="24"
           viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
           stroke-linejoin="round">
