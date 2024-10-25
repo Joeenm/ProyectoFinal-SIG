@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="/asssets/css/estilo.css"> 
     <title>Panel De Admin</title>
 </head>
 
@@ -86,10 +86,7 @@
                         </tr>
                         
                         <?php
-                        include('conexion.php');
-
                         try {
-                            // Modificar la consulta para obtener el ID del estudiante
                             $stmt = $conn->prepare("
                                 SELECT e.id, e.nombre, e.universidad, r.recomendacion 
                                 FROM estudiantes e 
