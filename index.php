@@ -1,3 +1,8 @@
+<?php
+// Iniciar la sesión
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -25,7 +30,7 @@
                         <h1>Bienvenido &#x1F44F;</h1>
                         <p>Por favor ingresa tus datos!</p>
                     </div>
-                    <form class="my-form">
+                    <form method="POST" action="php/login.php" class="my-form">
                         <div class="socials-row">
                             <a href="#" title="Use Google">
                                 <img src="/asssets/images/google.png" alt="Google">
@@ -83,7 +88,7 @@
                                 </a>
                             </div>
                             <div class="my-form__signup">
-                                <a href="/views/signup.html" title="Crear Cuenta">
+                                <a href="signup.php" title="Crear Cuenta">
                                     Crear una cuenta
                                 </a>
                             </div>
